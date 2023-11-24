@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event menegement company</title>
+</head>
+<body>
+    <h1>Exploring Event</h1>
+    <button>click me</button>
+    <button>
+        <batton id="bton">Click me -1</batton>
+    </button><button>
+        <batton>Click me -2</batton>
+    </button><button>
+        <batton id="last">Click me -3</batton>
+    </button>
+
+
+    <script>
+        //type 1
+        document.getElementById('last').addEventListener('click',function(){
+            document.body.style.color = ' yellow';
+        });
+
+        
+        //type 2
+        var btn = document.getElementById('bton');
+        function clicked(){
+            document.body.style.backgroundColor = 'red';
+        }
+        btn.addEventListener('click',clicked);
+    </script>
+</body>
+</html>
